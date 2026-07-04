@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form_us_tax" model="ir.ui.view">
+        <field name="name">res.config.settings.form.us.tax</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='account']" position="inside">
+                <block title="US Sales Tax" id="us_sales_tax_block">
+                    <setting id="us_tax_enabled_setting"
+                             string="US Sales Tax"
+                             help="Compute US sales tax with product-level taxability and a fail-safe engine.">
+                        <field name="us_tax_enabled"/>
+                        <div class="content-group mt16" invisible="not us_tax_enabled">
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Best-effort data — not tax advice.</strong>
+                                PBM refreshes rates quarterly on a best-effort basis but is not a
+                                source of truth and makes no guarantee that rates are correct or
+                                current. You remain responsible for the tax you collect and remit;
+                                verify with a qualified tax professional. PBM is not liable for
+                                under/over-collection, penalties, interest, or filing errors.
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_provider" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_provider"/>
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_default_category_id" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_default_category_id"/>
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_fail_mode" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_fail_mode"/>
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_unknown_taxable" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_unknown_taxable"/>
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_nexus_state_ids" class="col-lg-4 o_light_label"
+                                       string="Nexus States"/>
+                                <field name="us_tax_nexus_state_ids" widget="many2many_tags"
+                                       placeholder="Leave empty to collect everywhere; set to limit collection (e.g. CA)"/>
+                            </div>
+                            <div class="row">
+                                <label for="us_tax_comparison_enabled" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_comparison_enabled"/>
+                            </div>
+                            <div class="row" invisible="not us_tax_comparison_enabled">
+                                <label for="us_taxcloud_api_login_id" class="col-lg-4 o_light_label"/>
+                                <field name="us_taxcloud_api_login_id"/>
+                            </div>
+                            <div class="row" invisible="not us_tax_comparison_enabled">
+                                <label for="us_taxcloud_api_key" class="col-lg-4 o_light_label"/>
+                                <field name="us_taxcloud_api_key" password="True"/>
+                            </div>
+                            <div class="row" invisible="us_tax_provider != 'hosted'">
+                                <label for="us_tax_api_url" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_api_url" placeholder="https://api.example.com"/>
+                            </div>
+                            <div class="row" invisible="us_tax_provider != 'hosted'">
+                                <label for="us_tax_api_key" class="col-lg-4 o_light_label"/>
+                                <field name="us_tax_api_key" password="True"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

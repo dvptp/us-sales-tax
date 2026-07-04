@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <!-- Catch-all: the EXEMPT category is never taxable in any state. -->
+    <record id="rule_exempt_all" model="us.tax.rule">
+        <field name="category_id" ref="cat_exempt"/>
+        <field name="state_code">*</field>
+        <field name="taxable" eval="False"/>
+        <field name="note">Always exempt (discounts, fees, free-shipping rewards).</field>
+    </record>
+
+    <!-- California (CDTFA). -->
+    <record id="rule_ca_general" model="us.tax.rule">
+        <field name="category_id" ref="cat_general"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="True"/>
+        <field name="note">CA: tangible personal property is taxable.</field>
+    </record>
+
+    <record id="rule_ca_food" model="us.tax.rule">
+        <field name="category_id" ref="cat_food"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="False"/>
+        <field name="note">CA Rev &amp; Tax Code 6359: food products for home consumption are exempt.</field>
+    </record>
+
+    <record id="rule_ca_food_snack" model="us.tax.rule">
+        <field name="category_id" ref="cat_food_snack"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="False"/>
+        <field name="note">CA Prop 163 (1992): snack foods and candy are exempt.</field>
+    </record>
+
+    <record id="rule_ca_clothing" model="us.tax.rule">
+        <field name="category_id" ref="cat_clothing"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="True"/>
+        <field name="note">CA: apparel is taxable.</field>
+    </record>
+
+    <record id="rule_ca_digital" model="us.tax.rule">
+        <field name="category_id" ref="cat_digital"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="False"/>
+        <field name="note">CA: electronically delivered digital goods/software are generally not taxable.</field>
+    </record>
+
+    <record id="rule_ca_shipping" model="us.tax.rule">
+        <field name="category_id" ref="cat_shipping"/>
+        <field name="state_code">CA</field>
+        <field name="taxable" eval="False"/>
+        <field name="note">CA: separately stated delivery charges are generally exempt.</field>
+    </record>
+
+</odoo>

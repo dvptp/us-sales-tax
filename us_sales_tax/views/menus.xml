@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_us_tax_root"
+              name="US Sales Tax"
+              parent="account.menu_finance_configuration"
+              sequence="90"/>
+
+    <menuitem id="menu_us_tax_category"
+              name="Tax Categories"
+              parent="menu_us_tax_root"
+              action="action_us_tax_category"
+              sequence="10"/>
+
+    <menuitem id="menu_us_tax_rule"
+              name="Tax Rules"
+              parent="menu_us_tax_root"
+              action="action_us_tax_rule"
+              sequence="20"/>
+
+    <menuitem id="menu_us_tax_rate"
+              name="State Rates"
+              parent="menu_us_tax_root"
+              action="action_us_tax_rate"
+              sequence="30"/>
+
+</odoo>

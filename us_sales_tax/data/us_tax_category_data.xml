@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="cat_general" model="us.tax.category">
+        <field name="name">General Taxable Goods</field>
+        <field name="code">GENERAL</field>
+        <field name="description">Default tangible personal property -- taxable unless a rule says otherwise.</field>
+    </record>
+
+    <record id="cat_food" model="us.tax.category">
+        <field name="name">Food / Grocery</field>
+        <field name="code">FOOD</field>
+        <field name="description">Food products for home consumption.</field>
+    </record>
+
+    <record id="cat_food_snack" model="us.tax.category">
+        <field name="name">Snack Food &amp; Candy</field>
+        <field name="code">FOOD_SNACK</field>
+        <field name="description">Chips, crackers, candy and similar snack foods.</field>
+    </record>
+
+    <record id="cat_clothing" model="us.tax.category">
+        <field name="name">Clothing &amp; Apparel</field>
+        <field name="code">CLOTHING</field>
+        <field name="description">Wearing apparel and accessories.</field>
+    </record>
+
+    <record id="cat_digital" model="us.tax.category">
+        <field name="name">Digital Goods / SaaS</field>
+        <field name="code">DIGITAL</field>
+        <field name="description">Electronically delivered software, digital goods and services.</field>
+    </record>
+
+    <record id="cat_shipping" model="us.tax.category">
+        <field name="name">Shipping &amp; Delivery</field>
+        <field name="code">SHIPPING</field>
+        <field name="description">Separately stated shipping/delivery charges.</field>
+    </record>
+
+    <record id="cat_exempt" model="us.tax.category">
+        <field name="name">Always Exempt</field>
+        <field name="code">EXEMPT</field>
+        <field name="description">Never taxable in any state (e.g. discounts, fees, free-shipping rewards).</field>
+    </record>
+
+</odoo>

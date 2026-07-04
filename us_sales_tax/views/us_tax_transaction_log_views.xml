@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_us_tax_transaction_log_tree" model="ir.ui.view">
+        <field name="name">us.tax.transaction.log.tree</field>
+        <field name="model">us.tax.transaction.log</field>
+        <field name="arch" type="xml">
+            <list string="US Sales Tax Ledger (local mirror)" create="0">
+                <field name="occurred_at"/>
+                <field name="order_ref"/>
+                <field name="state_code"/>
+                <field name="gross" sum="Gross"/>
+                <field name="taxable" sum="Taxable"/>
+                <field name="exempt" sum="Exempt"/>
+                <field name="tax_collected" sum="Tax"/>
+                <field name="exempt_reason"/>
+                <field name="certificate_ref" optional="hide"/>
+                <field name="midas_synced" widget="boolean_toggle"/>
+                <field name="midas_error" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_us_tax_transaction_log" model="ir.actions.act_window">
+        <field name="name">Tax Ledger (mirror)</field>
+        <field name="res_model">us.tax.transaction.log</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <menuitem id="menu_us_tax_transaction_log"
+              name="Tax Ledger (mirror)"
+              parent="menu_us_tax_root"
+              action="action_us_tax_transaction_log"
+              sequence="40"/>
+
+</odoo>

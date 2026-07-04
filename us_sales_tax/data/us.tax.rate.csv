@@ -1,0 +1,543 @@
+id,state_code,level,county,city,jurisdiction_name,rate
+ca_state,CA,state,,,California,7.25
+ca_county_alameda,CA,county,ALAMEDA,,Alameda County,10.25
+ca_city_alameda_alameda,CA,city,ALAMEDA,ALAMEDA,Alameda,10.75
+ca_city_alameda_albany,CA,city,ALAMEDA,ALBANY,Albany,10.75
+ca_city_alameda_berkeley,CA,city,ALAMEDA,BERKELEY,Berkeley,10.25
+ca_city_alameda_dublin,CA,city,ALAMEDA,DUBLIN,Dublin,10.25
+ca_city_alameda_emeryville,CA,city,ALAMEDA,EMERYVILLE,Emeryville,10.5
+ca_city_alameda_fremont,CA,city,ALAMEDA,FREMONT,Fremont,10.25
+ca_city_alameda_hayward,CA,city,ALAMEDA,HAYWARD,Hayward,10.75
+ca_city_alameda_livermore,CA,city,ALAMEDA,LIVERMORE,Livermore,10.25
+ca_city_alameda_newark,CA,city,ALAMEDA,NEWARK,Newark,10.75
+ca_city_alameda_oakland,CA,city,ALAMEDA,OAKLAND,Oakland,10.75
+ca_city_alameda_piedmont,CA,city,ALAMEDA,PIEDMONT,Piedmont,10.25
+ca_city_alameda_pleasanton,CA,city,ALAMEDA,PLEASANTON,Pleasanton,10.25
+ca_city_alameda_san_leandro,CA,city,ALAMEDA,SAN LEANDRO,San Leandro,10.75
+ca_city_alameda_union_city,CA,city,ALAMEDA,UNION CITY,Union City,10.75
+ca_county_alpine,CA,county,ALPINE,,Alpine County,7.25
+ca_county_amador,CA,county,AMADOR,,Amador County,7.75
+ca_city_amador_amador_city,CA,city,AMADOR,AMADOR CITY,Amador City,8.0
+ca_city_amador_ione,CA,city,AMADOR,IONE,Ione,7.75
+ca_city_amador_jackson,CA,city,AMADOR,JACKSON,Jackson,7.75
+ca_city_amador_plymouth,CA,city,AMADOR,PLYMOUTH,Plymouth,7.75
+ca_city_amador_sutter_creek,CA,city,AMADOR,SUTTER CREEK,Sutter Creek,8.75
+ca_county_butte,CA,county,BUTTE,,Butte County,8.25
+ca_city_butte_biggs,CA,city,BUTTE,BIGGS,Biggs,8.25
+ca_city_butte_chico,CA,city,BUTTE,CHICO,Chico,9.25
+ca_city_butte_gridley,CA,city,BUTTE,GRIDLEY,Gridley,8.25
+ca_city_butte_oroville,CA,city,BUTTE,OROVILLE,Oroville,9.25
+ca_city_butte_paradise,CA,city,BUTTE,PARADISE,Paradise,8.75
+ca_county_calaveras,CA,county,CALAVERAS,,Calaveras County,8.25
+ca_city_calaveras_angels_camp,CA,city,CALAVERAS,ANGELS CAMP,Angels Camp,8.75
+ca_county_colusa,CA,county,COLUSA,,Colusa County,7.75
+ca_city_colusa_colusa,CA,city,COLUSA,COLUSA,Colusa,8.75
+ca_city_colusa_williams,CA,city,COLUSA,WILLIAMS,Williams,8.25
+ca_county_contra_costa,CA,county,CONTRA COSTA,,Contra Costa County,8.75
+ca_city_contra_costa_antioch,CA,city,CONTRA COSTA,ANTIOCH,Antioch,9.75
+ca_city_contra_costa_brentwood,CA,city,CONTRA COSTA,BRENTWOOD,Brentwood,8.75
+ca_city_contra_costa_clayton,CA,city,CONTRA COSTA,CLAYTON,Clayton,8.75
+ca_city_contra_costa_concord,CA,city,CONTRA COSTA,CONCORD,Concord,9.75
+ca_city_contra_costa_danville,CA,city,CONTRA COSTA,DANVILLE,Danville,8.75
+ca_city_contra_costa_el_cerrito,CA,city,CONTRA COSTA,EL CERRITO,El Cerrito,10.25
+ca_city_contra_costa_hercules,CA,city,CONTRA COSTA,HERCULES,Hercules,9.25
+ca_city_contra_costa_lafayette,CA,city,CONTRA COSTA,LAFAYETTE,Lafayette,9.25
+ca_city_contra_costa_martinez,CA,city,CONTRA COSTA,MARTINEZ,Martinez,9.75
+ca_city_contra_costa_moraga,CA,city,CONTRA COSTA,MORAGA,Moraga,9.75
+ca_city_contra_costa_oakley,CA,city,CONTRA COSTA,OAKLEY,Oakley,8.75
+ca_city_contra_costa_orinda,CA,city,CONTRA COSTA,ORINDA,Orinda,9.75
+ca_city_contra_costa_pinole,CA,city,CONTRA COSTA,PINOLE,Pinole,10.25
+ca_city_contra_costa_pittsburg,CA,city,CONTRA COSTA,PITTSBURG,Pittsburg,9.25
+ca_city_contra_costa_pleasant_hill,CA,city,CONTRA COSTA,PLEASANT HILL,Pleasant Hill,9.25
+ca_city_contra_costa_richmond,CA,city,CONTRA COSTA,RICHMOND,Richmond,9.75
+ca_city_contra_costa_san_pablo,CA,city,CONTRA COSTA,SAN PABLO,San Pablo,9.5
+ca_city_contra_costa_san_ramon,CA,city,CONTRA COSTA,SAN RAMON,San Ramon,9.75
+ca_city_contra_costa_walnut_creek,CA,city,CONTRA COSTA,WALNUT CREEK,Walnut Creek,9.25
+ca_county_del_norte,CA,county,DEL NORTE,,Del Norte County Unincorporated Area,8.25
+ca_city_del_norte_crescent_city,CA,city,DEL NORTE,CRESCENT CITY,Crescent City,8.25
+ca_county_el_dorado,CA,county,EL DORADO,,El Dorado County,7.25
+ca_city_el_dorado_placerville,CA,city,EL DORADO,PLACERVILLE,Placerville,8.25
+ca_city_el_dorado_south_lake_tahoe,CA,city,EL DORADO,SOUTH LAKE TAHOE,South Lake Tahoe,8.75
+ca_county_fresno,CA,county,FRESNO,,Fresno County,7.975
+ca_city_fresno_clovis,CA,city,FRESNO,CLOVIS,Clovis,8.975
+ca_city_fresno_coalinga,CA,city,FRESNO,COALINGA,Coalinga,8.975
+ca_city_fresno_firebaugh,CA,city,FRESNO,FIREBAUGH,Firebaugh,7.975
+ca_city_fresno_fowler,CA,city,FRESNO,FOWLER,Fowler,8.975
+ca_city_fresno_fresno,CA,city,FRESNO,FRESNO,Fresno,8.35
+ca_city_fresno_huron,CA,city,FRESNO,HURON,Huron,8.975
+ca_city_fresno_kerman,CA,city,FRESNO,KERMAN,Kerman,8.975
+ca_city_fresno_kingsburg,CA,city,FRESNO,KINGSBURG,Kingsburg,8.975
+ca_city_fresno_mendota,CA,city,FRESNO,MENDOTA,Mendota,9.225
+ca_city_fresno_orange_cove,CA,city,FRESNO,ORANGE COVE,Orange Cove,7.975
+ca_city_fresno_parlier,CA,city,FRESNO,PARLIER,Parlier,8.975
+ca_city_fresno_reedley,CA,city,FRESNO,REEDLEY,Reedley,9.225
+ca_city_fresno_san_joaquin,CA,city,FRESNO,SAN JOAQUIN,San Joaquin,7.975
+ca_city_fresno_sanger,CA,city,FRESNO,SANGER,Sanger,8.725
+ca_city_fresno_selma,CA,city,FRESNO,SELMA,Selma,8.475
+ca_county_glenn,CA,county,GLENN,,Glenn County,7.25
+ca_city_glenn_orland,CA,city,GLENN,ORLAND,Orland,8.25
+ca_city_glenn_willows,CA,city,GLENN,WILLOWS,Willows,8.75
+ca_county_humboldt,CA,county,HUMBOLDT,,Humboldt County,8.75
+ca_city_humboldt_arcata,CA,city,HUMBOLDT,ARCATA,Arcata,10.25
+ca_city_humboldt_blue_lake,CA,city,HUMBOLDT,BLUE LAKE,Blue Lake,9.75
+ca_city_humboldt_eureka,CA,city,HUMBOLDT,EUREKA,Eureka,10.25
+ca_city_humboldt_ferndale,CA,city,HUMBOLDT,FERNDALE,Ferndale,9.5
+ca_city_humboldt_fortuna,CA,city,HUMBOLDT,FORTUNA,Fortuna,9.5
+ca_city_humboldt_rio_dell,CA,city,HUMBOLDT,RIO DELL,Rio Dell,9.5
+ca_city_humboldt_trinidad,CA,city,HUMBOLDT,TRINIDAD,Trinidad,9.5
+ca_county_imperial,CA,county,IMPERIAL,,Imperial County,7.75
+ca_city_imperial_brawley,CA,city,IMPERIAL,BRAWLEY,Brawley,8.75
+ca_city_imperial_calexico,CA,city,IMPERIAL,CALEXICO,Calexico,8.25
+ca_city_imperial_calipatria,CA,city,IMPERIAL,CALIPATRIA,Calipatria,7.75
+ca_city_imperial_el_centro,CA,city,IMPERIAL,EL CENTRO,El Centro,8.25
+ca_city_imperial_holtville,CA,city,IMPERIAL,HOLTVILLE,Holtville,7.75
+ca_city_imperial_imperial,CA,city,IMPERIAL,IMPERIAL,Imperial,7.75
+ca_city_imperial_westmorland,CA,city,IMPERIAL,WESTMORLAND,Westmorland,7.75
+ca_county_inyo,CA,county,INYO,,Inyo County,7.75
+ca_city_inyo_bishop,CA,city,INYO,BISHOP,Bishop,8.75
+ca_county_kern,CA,county,KERN,,Kern County Unincorporated Area,8.25
+ca_city_kern_arvin,CA,city,KERN,ARVIN,Arvin,8.25
+ca_city_kern_bakersfield,CA,city,KERN,BAKERSFIELD,Bakersfield,8.25
+ca_city_kern_california_city,CA,city,KERN,CALIFORNIA CITY,California City,8.25
+ca_city_kern_delano,CA,city,KERN,DELANO,Delano,8.25
+ca_city_kern_maricopa,CA,city,KERN,MARICOPA,Maricopa,8.25
+ca_city_kern_mcfarland,CA,city,KERN,MCFARLAND,McFarland,9.25
+ca_city_kern_ridgecrest,CA,city,KERN,RIDGECREST,Ridgecrest,9.25
+ca_city_kern_shafter,CA,city,KERN,SHAFTER,Shafter,7.25
+ca_city_kern_taft,CA,city,KERN,TAFT,Taft,8.25
+ca_city_kern_tehachapi,CA,city,KERN,TEHACHAPI,Tehachapi,8.25
+ca_city_kern_wasco,CA,city,KERN,WASCO,Wasco,8.25
+ca_county_kings,CA,county,KINGS,,Kings County,7.25
+ca_city_kings_avenal,CA,city,KINGS,AVENAL,Avenal,8.25
+ca_city_kings_corcoran,CA,city,KINGS,CORCORAN,Corcoran,8.25
+ca_city_kings_hanford,CA,city,KINGS,HANFORD,Hanford,8.25
+ca_city_kings_lemoore,CA,city,KINGS,LEMOORE,Lemoore,8.25
+ca_county_lake,CA,county,LAKE,,Lake County,7.25
+ca_city_lake_clearlake,CA,city,LAKE,CLEARLAKE,Clearlake,8.75
+ca_city_lake_lakeport,CA,city,LAKE,LAKEPORT,Lakeport,8.75
+ca_county_lassen,CA,county,LASSEN,,Lassen County,7.25
+ca_city_lassen_susanville,CA,city,LASSEN,SUSANVILLE,Susanville,8.25
+ca_county_los_angeles,CA,county,LOS ANGELES,,Los Angeles County,9.75
+ca_city_los_angeles_agoura_hills,CA,city,LOS ANGELES,AGOURA HILLS,Agoura Hills,9.75
+ca_city_los_angeles_alhambra,CA,city,LOS ANGELES,ALHAMBRA,Alhambra,10.5
+ca_city_los_angeles_arcadia,CA,city,LOS ANGELES,ARCADIA,Arcadia,10.5
+ca_city_los_angeles_artesia,CA,city,LOS ANGELES,ARTESIA,Artesia,10.5
+ca_city_los_angeles_avalon,CA,city,LOS ANGELES,AVALON,Avalon,10.25
+ca_city_los_angeles_azusa,CA,city,LOS ANGELES,AZUSA,Azusa,10.75
+ca_city_los_angeles_baldwin_park,CA,city,LOS ANGELES,BALDWIN PARK,Baldwin Park,10.5
+ca_city_los_angeles_bell,CA,city,LOS ANGELES,BELL,Bell,9.75
+ca_city_los_angeles_bell_gardens,CA,city,LOS ANGELES,BELL GARDENS,Bell Gardens,10.5
+ca_city_los_angeles_bellflower,CA,city,LOS ANGELES,BELLFLOWER,Bellflower,10.5
+ca_city_los_angeles_beverly_hills,CA,city,LOS ANGELES,BEVERLY HILLS,Beverly Hills,9.75
+ca_city_los_angeles_bradbury,CA,city,LOS ANGELES,BRADBURY,Bradbury,9.75
+ca_city_los_angeles_burbank,CA,city,LOS ANGELES,BURBANK,Burbank,10.5
+ca_city_los_angeles_calabasas,CA,city,LOS ANGELES,CALABASAS,Calabasas,9.75
+ca_city_los_angeles_carson,CA,city,LOS ANGELES,CARSON,Carson,10.5
+ca_city_los_angeles_cerritos,CA,city,LOS ANGELES,CERRITOS,Cerritos,9.75
+ca_city_los_angeles_city_of_commerce,CA,city,LOS ANGELES,CITY OF COMMERCE,City of Commerce,10.5
+ca_city_los_angeles_city_of_industry,CA,city,LOS ANGELES,CITY OF INDUSTRY,City of Industry,9.75
+ca_city_los_angeles_claremont,CA,city,LOS ANGELES,CLAREMONT,Claremont,9.75
+ca_city_los_angeles_compton,CA,city,LOS ANGELES,COMPTON,Compton,10.75
+ca_city_los_angeles_covina,CA,city,LOS ANGELES,COVINA,Covina,10.5
+ca_city_los_angeles_cudahy,CA,city,LOS ANGELES,CUDAHY,Cudahy,10.5
+ca_city_los_angeles_culver_city,CA,city,LOS ANGELES,CULVER CITY,Culver City,10.75
+ca_city_los_angeles_diamond_bar,CA,city,LOS ANGELES,DIAMOND BAR,Diamond Bar,9.75
+ca_city_los_angeles_downey,CA,city,LOS ANGELES,DOWNEY,Downey,10.5
+ca_city_los_angeles_duarte,CA,city,LOS ANGELES,DUARTE,Duarte,10.5
+ca_city_los_angeles_el_monte,CA,city,LOS ANGELES,EL MONTE,El Monte,10.5
+ca_city_los_angeles_el_segundo,CA,city,LOS ANGELES,EL SEGUNDO,El Segundo,9.75
+ca_city_los_angeles_gardena,CA,city,LOS ANGELES,GARDENA,Gardena,10.5
+ca_city_los_angeles_glendale,CA,city,LOS ANGELES,GLENDALE,Glendale,10.5
+ca_city_los_angeles_glendora,CA,city,LOS ANGELES,GLENDORA,Glendora,10.75
+ca_city_los_angeles_hawaiian_gardens,CA,city,LOS ANGELES,HAWAIIAN GARDENS,Hawaiian Gardens,10.5
+ca_city_los_angeles_hawthorne,CA,city,LOS ANGELES,HAWTHORNE,Hawthorne,10.5
+ca_city_los_angeles_hermosa_beach,CA,city,LOS ANGELES,HERMOSA BEACH,Hermosa Beach,9.75
+ca_city_los_angeles_hidden_hills,CA,city,LOS ANGELES,HIDDEN HILLS,Hidden Hills,9.75
+ca_city_los_angeles_huntington_park,CA,city,LOS ANGELES,HUNTINGTON PARK,Huntington Park,10.5
+ca_city_los_angeles_inglewood,CA,city,LOS ANGELES,INGLEWOOD,Inglewood,10.25
+ca_city_los_angeles_irwindale,CA,city,LOS ANGELES,IRWINDALE,Irwindale,10.75
+ca_city_los_angeles_la_ca_ada_flintridge,CA,city,LOS ANGELES,LA CAÑADA FLINTRIDGE,La Cañada Flintridge,10.5
+ca_city_los_angeles_la_habra_heights,CA,city,LOS ANGELES,LA HABRA HEIGHTS,La Habra Heights,9.75
+ca_city_los_angeles_la_mirada,CA,city,LOS ANGELES,LA MIRADA,La Mirada,9.75
+ca_city_los_angeles_la_puente,CA,city,LOS ANGELES,LA PUENTE,La Puente,10.25
+ca_city_los_angeles_la_verne,CA,city,LOS ANGELES,LA VERNE,La Verne,10.5
+ca_city_los_angeles_lakewood,CA,city,LOS ANGELES,LAKEWOOD,Lakewood,10.5
+ca_city_los_angeles_lancaster,CA,city,LOS ANGELES,LANCASTER,Lancaster,11.25
+ca_city_los_angeles_lawndale,CA,city,LOS ANGELES,LAWNDALE,Lawndale,10.5
+ca_city_los_angeles_lomita,CA,city,LOS ANGELES,LOMITA,Lomita,10.5
+ca_city_los_angeles_long_beach,CA,city,LOS ANGELES,LONG BEACH,Long Beach,10.5
+ca_city_los_angeles_los_angeles,CA,city,LOS ANGELES,LOS ANGELES,Los Angeles,9.75
+ca_city_los_angeles_lynwood,CA,city,LOS ANGELES,LYNWOOD,Lynwood,10.75
+ca_city_los_angeles_malibu,CA,city,LOS ANGELES,MALIBU,Malibu,10.25
+ca_city_los_angeles_manhattan_beach,CA,city,LOS ANGELES,MANHATTAN BEACH,Manhattan Beach,10.25
+ca_city_los_angeles_maywood,CA,city,LOS ANGELES,MAYWOOD,Maywood,9.75
+ca_city_los_angeles_monrovia,CA,city,LOS ANGELES,MONROVIA,Monrovia,10.5
+ca_city_los_angeles_montebello,CA,city,LOS ANGELES,MONTEBELLO,Montebello,10.5
+ca_city_los_angeles_monterey_park,CA,city,LOS ANGELES,MONTEREY PARK,Monterey Park,10.5
+ca_city_los_angeles_norwalk,CA,city,LOS ANGELES,NORWALK,Norwalk,10.5
+ca_city_los_angeles_palmdale,CA,city,LOS ANGELES,PALMDALE,Palmdale,11.25
+ca_city_los_angeles_palos_verdes_estates,CA,city,LOS ANGELES,PALOS VERDES ESTATES,Palos Verdes Estates,9.75
+ca_city_los_angeles_paramount,CA,city,LOS ANGELES,PARAMOUNT,Paramount,10.5
+ca_city_los_angeles_pasadena,CA,city,LOS ANGELES,PASADENA,Pasadena,10.5
+ca_city_los_angeles_pico_rivera,CA,city,LOS ANGELES,PICO RIVERA,Pico Rivera,10.75
+ca_city_los_angeles_pomona,CA,city,LOS ANGELES,POMONA,Pomona,10.5
+ca_city_los_angeles_rancho_palos_verdes,CA,city,LOS ANGELES,RANCHO PALOS VERDES,Rancho Palos Verdes,9.75
+ca_city_los_angeles_redondo_beach,CA,city,LOS ANGELES,REDONDO BEACH,Redondo Beach,9.75
+ca_city_los_angeles_rolling_hills,CA,city,LOS ANGELES,ROLLING HILLS,Rolling Hills,9.75
+ca_city_los_angeles_rolling_hills_estates,CA,city,LOS ANGELES,ROLLING HILLS ESTATES,Rolling Hills Estates,9.75
+ca_city_los_angeles_rosemead,CA,city,LOS ANGELES,ROSEMEAD,Rosemead,9.75
+ca_city_los_angeles_san_dimas,CA,city,LOS ANGELES,SAN DIMAS,San Dimas,9.75
+ca_city_los_angeles_san_fernando,CA,city,LOS ANGELES,SAN FERNANDO,San Fernando,10.5
+ca_city_los_angeles_san_gabriel,CA,city,LOS ANGELES,SAN GABRIEL,San Gabriel,10.5
+ca_city_los_angeles_san_marino,CA,city,LOS ANGELES,SAN MARINO,San Marino,9.75
+ca_city_los_angeles_santa_clarita,CA,city,LOS ANGELES,SANTA CLARITA,Santa Clarita,9.75
+ca_city_los_angeles_santa_fe_springs,CA,city,LOS ANGELES,SANTA FE SPRINGS,Santa Fe Springs,11.0
+ca_city_los_angeles_santa_monica,CA,city,LOS ANGELES,SANTA MONICA,Santa Monica,10.75
+ca_city_los_angeles_sierra_madre,CA,city,LOS ANGELES,SIERRA MADRE,Sierra Madre,10.5
+ca_city_los_angeles_signal_hill,CA,city,LOS ANGELES,SIGNAL HILL,Signal Hill,10.5
+ca_city_los_angeles_south_el_monte,CA,city,LOS ANGELES,SOUTH EL MONTE,South El Monte,10.75
+ca_city_los_angeles_south_gate,CA,city,LOS ANGELES,SOUTH GATE,South Gate,10.75
+ca_city_los_angeles_south_pasadena,CA,city,LOS ANGELES,SOUTH PASADENA,South Pasadena,10.5
+ca_city_los_angeles_temple_city,CA,city,LOS ANGELES,TEMPLE CITY,Temple City,9.75
+ca_city_los_angeles_torrance,CA,city,LOS ANGELES,TORRANCE,Torrance,10.25
+ca_city_los_angeles_vernon,CA,city,LOS ANGELES,VERNON,Vernon,10.5
+ca_city_los_angeles_walnut,CA,city,LOS ANGELES,WALNUT,Walnut,9.75
+ca_city_los_angeles_west_covina,CA,city,LOS ANGELES,WEST COVINA,West Covina,9.75
+ca_city_los_angeles_west_hollywood,CA,city,LOS ANGELES,WEST HOLLYWOOD,West Hollywood,10.5
+ca_city_los_angeles_westlake_village,CA,city,LOS ANGELES,WESTLAKE VILLAGE,Westlake Village,9.75
+ca_city_los_angeles_whittier,CA,city,LOS ANGELES,WHITTIER,Whittier,10.5
+ca_county_madera,CA,county,MADERA,,Madera County,7.75
+ca_city_madera_chowchilla,CA,city,MADERA,CHOWCHILLA,Chowchilla,8.75
+ca_city_madera_madera,CA,city,MADERA,MADERA,Madera,8.25
+ca_county_marin,CA,county,MARIN,,Marin County,8.25
+ca_city_marin_belvedere,CA,city,MARIN,BELVEDERE,Belvedere,8.25
+ca_city_marin_corte_madera,CA,city,MARIN,CORTE MADERA,Corte Madera,9.0
+ca_city_marin_fairfax,CA,city,MARIN,FAIRFAX,Fairfax,9.0
+ca_city_marin_larkspur,CA,city,MARIN,LARKSPUR,Larkspur,9.25
+ca_city_marin_mill_valley,CA,city,MARIN,MILL VALLEY,Mill Valley,9.25
+ca_city_marin_novato,CA,city,MARIN,NOVATO,Novato,9.25
+ca_city_marin_ross,CA,city,MARIN,ROSS,Ross,8.25
+ca_city_marin_san_anselmo,CA,city,MARIN,SAN ANSELMO,San Anselmo,9.25
+ca_city_marin_san_rafael,CA,city,MARIN,SAN RAFAEL,San Rafael,9.25
+ca_city_marin_sausalito,CA,city,MARIN,SAUSALITO,Sausalito,9.25
+ca_city_marin_tiburon,CA,city,MARIN,TIBURON,Tiburon,8.25
+ca_county_mariposa,CA,county,MARIPOSA,,Mariposa County,8.25
+ca_county_mendocino,CA,county,MENDOCINO,,Mendocino County,7.875
+ca_city_mendocino_fort_bragg,CA,city,MENDOCINO,FORT BRAGG,Fort Bragg,9.25
+ca_city_mendocino_point_arena,CA,city,MENDOCINO,POINT ARENA,Point Arena,9.25
+ca_city_mendocino_ukiah,CA,city,MENDOCINO,UKIAH,Ukiah,8.875
+ca_city_mendocino_willits,CA,city,MENDOCINO,WILLITS,Willits,9.125
+ca_county_merced,CA,county,MERCED,,Merced County,7.75
+ca_city_merced_atwater,CA,city,MERCED,ATWATER,Atwater,8.75
+ca_city_merced_dos_palos,CA,city,MERCED,DOS PALOS,Dos Palos,8.25
+ca_city_merced_gustine,CA,city,MERCED,GUSTINE,Gustine,8.25
+ca_city_merced_livingston,CA,city,MERCED,LIVINGSTON,Livingston,8.75
+ca_city_merced_los_banos,CA,city,MERCED,LOS BANOS,Los Banos,8.75
+ca_city_merced_merced,CA,city,MERCED,MERCED,Merced,8.25
+ca_county_modoc,CA,county,MODOC,,Modoc County,7.25
+ca_city_modoc_alturas,CA,city,MODOC,ALTURAS,Alturas,7.25
+ca_county_mono,CA,county,MONO,,Mono County,7.25
+ca_city_mono_mammoth_lakes,CA,city,MONO,MAMMOTH LAKES,Mammoth Lakes,7.75
+ca_county_monterey,CA,county,MONTEREY,,Monterey County Unincorporated Area,8.75
+ca_city_monterey_carmel_by_the_sea,CA,city,MONTEREY,CARMEL-BY-THE-SEA,Carmel-by-the-Sea,9.25
+ca_city_monterey_del_rey_oaks,CA,city,MONTEREY,DEL REY OAKS,Del Rey Oaks,9.25
+ca_city_monterey_gonzales,CA,city,MONTEREY,GONZALES,Gonzales,8.75
+ca_city_monterey_greenfield,CA,city,MONTEREY,GREENFIELD,Greenfield,9.5
+ca_city_monterey_king_city,CA,city,MONTEREY,KING CITY,King City,8.75
+ca_city_monterey_marina,CA,city,MONTEREY,MARINA,Marina,9.25
+ca_city_monterey_monterey,CA,city,MONTEREY,MONTEREY,Monterey,9.25
+ca_city_monterey_pacific_grove,CA,city,MONTEREY,PACIFIC GROVE,Pacific Grove,9.25
+ca_city_monterey_salinas,CA,city,MONTEREY,SALINAS,Salinas,9.25
+ca_city_monterey_sand_city,CA,city,MONTEREY,SAND CITY,Sand City,9.25
+ca_city_monterey_seaside,CA,city,MONTEREY,SEASIDE,Seaside,9.25
+ca_city_monterey_soledad,CA,city,MONTEREY,SOLEDAD,Soledad,9.25
+ca_county_napa,CA,county,NAPA,,Napa County,7.75
+ca_city_napa_american_canyon,CA,city,NAPA,AMERICAN CANYON,American Canyon,7.75
+ca_city_napa_calistoga,CA,city,NAPA,CALISTOGA,Calistoga,7.75
+ca_city_napa_napa,CA,city,NAPA,NAPA,Napa,8.75
+ca_city_napa_st_helena,CA,city,NAPA,ST. HELENA,St. Helena,8.25
+ca_city_napa_yountville,CA,city,NAPA,YOUNTVILLE,Yountville,7.75
+ca_county_nevada,CA,county,NEVADA,,Nevada County,7.5
+ca_city_nevada_grass_valley,CA,city,NEVADA,GRASS VALLEY,Grass Valley,8.875
+ca_city_nevada_nevada_city,CA,city,NEVADA,NEVADA CITY,Nevada City,8.875
+ca_city_nevada_truckee,CA,city,NEVADA,TRUCKEE,Truckee,9.0
+ca_county_orange,CA,county,ORANGE,,Orange County,7.75
+ca_city_orange_aliso_viejo,CA,city,ORANGE,ALISO VIEJO,Aliso Viejo,7.75
+ca_city_orange_anaheim,CA,city,ORANGE,ANAHEIM,Anaheim,7.75
+ca_city_orange_brea,CA,city,ORANGE,BREA,Brea,7.75
+ca_city_orange_buena_park,CA,city,ORANGE,BUENA PARK,Buena Park,8.75
+ca_city_orange_costa_mesa,CA,city,ORANGE,COSTA MESA,Costa Mesa,7.75
+ca_city_orange_cypress,CA,city,ORANGE,CYPRESS,Cypress,7.75
+ca_city_orange_dana_point,CA,city,ORANGE,DANA POINT,Dana Point,7.75
+ca_city_orange_fountain_valley,CA,city,ORANGE,FOUNTAIN VALLEY,Fountain Valley,8.75
+ca_city_orange_fullerton,CA,city,ORANGE,FULLERTON,Fullerton,7.75
+ca_city_orange_garden_grove,CA,city,ORANGE,GARDEN GROVE,Garden Grove,8.75
+ca_city_orange_huntington_beach,CA,city,ORANGE,HUNTINGTON BEACH,Huntington Beach,7.75
+ca_city_orange_irvine,CA,city,ORANGE,IRVINE,Irvine,7.75
+ca_city_orange_la_habra,CA,city,ORANGE,LA HABRA,La Habra,8.75
+ca_city_orange_la_palma,CA,city,ORANGE,LA PALMA,La Palma,8.75
+ca_city_orange_laguna_beach,CA,city,ORANGE,LAGUNA BEACH,Laguna Beach,7.75
+ca_city_orange_laguna_hills,CA,city,ORANGE,LAGUNA HILLS,Laguna Hills,7.75
+ca_city_orange_laguna_niguel,CA,city,ORANGE,LAGUNA NIGUEL,Laguna Niguel,7.75
+ca_city_orange_laguna_woods,CA,city,ORANGE,LAGUNA WOODS,Laguna Woods,7.75
+ca_city_orange_lake_forest,CA,city,ORANGE,LAKE FOREST,Lake Forest,7.75
+ca_city_orange_los_alamitos,CA,city,ORANGE,LOS ALAMITOS,Los Alamitos,9.25
+ca_city_orange_mission_viejo,CA,city,ORANGE,MISSION VIEJO,Mission Viejo,7.75
+ca_city_orange_newport_beach,CA,city,ORANGE,NEWPORT BEACH,Newport Beach,7.75
+ca_city_orange_orange,CA,city,ORANGE,ORANGE,Orange,7.75
+ca_city_orange_placentia,CA,city,ORANGE,PLACENTIA,Placentia,8.75
+ca_city_orange_rancho_santa_margarita,CA,city,ORANGE,RANCHO SANTA MARGARITA,Rancho Santa Margarita,7.75
+ca_city_orange_san_clemente,CA,city,ORANGE,SAN CLEMENTE,San Clemente,7.75
+ca_city_orange_san_juan_capistrano,CA,city,ORANGE,SAN JUAN CAPISTRANO,San Juan Capistrano,7.75
+ca_city_orange_santa_ana,CA,city,ORANGE,SANTA ANA,Santa Ana,9.25
+ca_city_orange_seal_beach,CA,city,ORANGE,SEAL BEACH,Seal Beach,9.25
+ca_city_orange_stanton,CA,city,ORANGE,STANTON,Stanton,8.75
+ca_city_orange_tustin,CA,city,ORANGE,TUSTIN,Tustin,7.75
+ca_city_orange_villa_park,CA,city,ORANGE,VILLA PARK,Villa Park,7.75
+ca_city_orange_westminster,CA,city,ORANGE,WESTMINSTER,Westminster,9.25
+ca_city_orange_yorba_linda,CA,city,ORANGE,YORBA LINDA,Yorba Linda,7.75
+ca_county_placer,CA,county,PLACER,,Placer County,7.25
+ca_city_placer_auburn,CA,city,PLACER,AUBURN,Auburn,7.25
+ca_city_placer_colfax,CA,city,PLACER,COLFAX,Colfax,7.25
+ca_city_placer_lincoln,CA,city,PLACER,LINCOLN,Lincoln,7.25
+ca_city_placer_loomis,CA,city,PLACER,LOOMIS,Loomis,7.5
+ca_city_placer_rocklin,CA,city,PLACER,ROCKLIN,Rocklin,7.25
+ca_city_placer_roseville,CA,city,PLACER,ROSEVILLE,Roseville,7.75
+ca_county_plumas,CA,county,PLUMAS,,Plumas County,7.25
+ca_city_plumas_portola,CA,city,PLUMAS,PORTOLA,Portola,7.25
+ca_county_riverside,CA,county,RIVERSIDE,,Riverside County,7.75
+ca_city_riverside_banning,CA,city,RIVERSIDE,BANNING,Banning,7.75
+ca_city_riverside_beaumont,CA,city,RIVERSIDE,BEAUMONT,Beaumont,7.75
+ca_city_riverside_blythe,CA,city,RIVERSIDE,BLYTHE,Blythe,8.75
+ca_city_riverside_calimesa,CA,city,RIVERSIDE,CALIMESA,Calimesa,7.75
+ca_city_riverside_canyon_lake,CA,city,RIVERSIDE,CANYON LAKE,Canyon Lake,7.75
+ca_city_riverside_cathedral_city,CA,city,RIVERSIDE,CATHEDRAL CITY,Cathedral City,9.25
+ca_city_riverside_coachella,CA,city,RIVERSIDE,COACHELLA,Coachella,8.75
+ca_city_riverside_corona,CA,city,RIVERSIDE,CORONA,Corona,8.75
+ca_city_riverside_desert_hot_springs,CA,city,RIVERSIDE,DESERT HOT SPRINGS,Desert Hot Springs,8.75
+ca_city_riverside_eastvale,CA,city,RIVERSIDE,EASTVALE,Eastvale,7.75
+ca_city_riverside_hemet,CA,city,RIVERSIDE,HEMET,Hemet,8.75
+ca_city_riverside_indian_wells,CA,city,RIVERSIDE,INDIAN WELLS,Indian Wells,7.75
+ca_city_riverside_indio,CA,city,RIVERSIDE,INDIO,Indio,8.75
+ca_city_riverside_jurupa_valley,CA,city,RIVERSIDE,JURUPA VALLEY,Jurupa Valley,7.75
+ca_city_riverside_la_quinta,CA,city,RIVERSIDE,LA QUINTA,La Quinta,8.75
+ca_city_riverside_lake_elsinore,CA,city,RIVERSIDE,LAKE ELSINORE,Lake Elsinore,8.75
+ca_city_riverside_menifee,CA,city,RIVERSIDE,MENIFEE,Menifee,8.75
+ca_city_riverside_moreno_valley,CA,city,RIVERSIDE,MORENO VALLEY,Moreno Valley,8.75
+ca_city_riverside_murrieta,CA,city,RIVERSIDE,MURRIETA,Murrieta,8.75
+ca_city_riverside_norco,CA,city,RIVERSIDE,NORCO,Norco,8.75
+ca_city_riverside_palm_desert,CA,city,RIVERSIDE,PALM DESERT,Palm Desert,8.75
+ca_city_riverside_palm_springs,CA,city,RIVERSIDE,PALM SPRINGS,Palm Springs,9.25
+ca_city_riverside_perris,CA,city,RIVERSIDE,PERRIS,Perris,7.75
+ca_city_riverside_rancho_mirage,CA,city,RIVERSIDE,RANCHO MIRAGE,Rancho Mirage,7.75
+ca_city_riverside_riverside,CA,city,RIVERSIDE,RIVERSIDE,Riverside,8.75
+ca_city_riverside_san_jacinto,CA,city,RIVERSIDE,SAN JACINTO,San Jacinto,8.75
+ca_city_riverside_temecula,CA,city,RIVERSIDE,TEMECULA,Temecula,8.75
+ca_city_riverside_wildomar,CA,city,RIVERSIDE,WILDOMAR,Wildomar,8.75
+ca_county_sacramento,CA,county,SACRAMENTO,,Sacramento County,7.75
+ca_city_sacramento_citrus_heights,CA,city,SACRAMENTO,CITRUS HEIGHTS,Citrus Heights,7.75
+ca_city_sacramento_elk_grove,CA,city,SACRAMENTO,ELK GROVE,Elk Grove,8.75
+ca_city_sacramento_folsom,CA,city,SACRAMENTO,FOLSOM,Folsom,7.75
+ca_city_sacramento_galt,CA,city,SACRAMENTO,GALT,Galt,9.25
+ca_city_sacramento_isleton,CA,city,SACRAMENTO,ISLETON,Isleton,8.75
+ca_city_sacramento_rancho_cordova,CA,city,SACRAMENTO,RANCHO CORDOVA,Rancho Cordova,8.75
+ca_city_sacramento_sacramento,CA,city,SACRAMENTO,SACRAMENTO,Sacramento,8.75
+ca_county_san_benito,CA,county,SAN BENITO,,San Benito County,8.25
+ca_city_san_benito_hollister,CA,city,SAN BENITO,HOLLISTER,Hollister,9.25
+ca_city_san_benito_san_juan_bautista,CA,city,SAN BENITO,SAN JUAN BAUTISTA,San Juan Bautista,9.0
+ca_county_san_bernardino,CA,county,SAN BERNARDINO,,San Bernardino County,7.75
+ca_city_san_bernardino_adelanto,CA,city,SAN BERNARDINO,ADELANTO,Adelanto,7.75
+ca_city_san_bernardino_apple_valley,CA,city,SAN BERNARDINO,APPLE VALLEY,Apple Valley,8.75
+ca_city_san_bernardino_barstow,CA,city,SAN BERNARDINO,BARSTOW,Barstow,8.75
+ca_city_san_bernardino_big_bear_lake,CA,city,SAN BERNARDINO,BIG BEAR LAKE,Big Bear Lake,7.75
+ca_city_san_bernardino_chino,CA,city,SAN BERNARDINO,CHINO,Chino,8.75
+ca_city_san_bernardino_chino_hills,CA,city,SAN BERNARDINO,CHINO HILLS,Chino Hills,7.75
+ca_city_san_bernardino_colton,CA,city,SAN BERNARDINO,COLTON,Colton,8.75
+ca_city_san_bernardino_fontana,CA,city,SAN BERNARDINO,FONTANA,Fontana,8.75
+ca_city_san_bernardino_grand_terrace,CA,city,SAN BERNARDINO,GRAND TERRACE,Grand Terrace,7.75
+ca_city_san_bernardino_hesperia,CA,city,SAN BERNARDINO,HESPERIA,Hesperia,7.75
+ca_city_san_bernardino_highland,CA,city,SAN BERNARDINO,HIGHLAND,Highland,7.75
+ca_city_san_bernardino_loma_linda,CA,city,SAN BERNARDINO,LOMA LINDA,Loma Linda,7.75
+ca_city_san_bernardino_montclair,CA,city,SAN BERNARDINO,MONTCLAIR,Montclair,9.0
+ca_city_san_bernardino_needles,CA,city,SAN BERNARDINO,NEEDLES,Needles,7.75
+ca_city_san_bernardino_ontario,CA,city,SAN BERNARDINO,ONTARIO,Ontario,8.75
+ca_city_san_bernardino_rancho_cucamonga,CA,city,SAN BERNARDINO,RANCHO CUCAMONGA,Rancho Cucamonga,7.75
+ca_city_san_bernardino_redlands,CA,city,SAN BERNARDINO,REDLANDS,Redlands,8.75
+ca_city_san_bernardino_rialto,CA,city,SAN BERNARDINO,RIALTO,Rialto,7.75
+ca_city_san_bernardino_san_bernardino,CA,city,SAN BERNARDINO,SAN BERNARDINO,San Bernardino,8.75
+ca_city_san_bernardino_twentynine_palms,CA,city,SAN BERNARDINO,TWENTYNINE PALMS,Twentynine Palms,7.75
+ca_city_san_bernardino_upland,CA,city,SAN BERNARDINO,UPLAND,Upland,7.75
+ca_city_san_bernardino_victorville,CA,city,SAN BERNARDINO,VICTORVILLE,Victorville,8.75
+ca_city_san_bernardino_yucaipa,CA,city,SAN BERNARDINO,YUCAIPA,Yucaipa,8.75
+ca_city_san_bernardino_yucca_valley,CA,city,SAN BERNARDINO,YUCCA VALLEY,Yucca Valley,8.75
+ca_county_san_diego,CA,county,SAN DIEGO,,San Diego County,7.75
+ca_city_san_diego_carlsbad,CA,city,SAN DIEGO,CARLSBAD,Carlsbad,7.75
+ca_city_san_diego_chula_vista,CA,city,SAN DIEGO,CHULA VISTA,Chula Vista,8.75
+ca_city_san_diego_coronado,CA,city,SAN DIEGO,CORONADO,Coronado,7.75
+ca_city_san_diego_del_mar,CA,city,SAN DIEGO,DEL MAR,Del Mar,8.75
+ca_city_san_diego_el_cajon,CA,city,SAN DIEGO,EL CAJON,El Cajon,8.25
+ca_city_san_diego_encinitas,CA,city,SAN DIEGO,ENCINITAS,Encinitas,7.75
+ca_city_san_diego_escondido,CA,city,SAN DIEGO,ESCONDIDO,Escondido,8.75
+ca_city_san_diego_imperial_beach,CA,city,SAN DIEGO,IMPERIAL BEACH,Imperial Beach,8.75
+ca_city_san_diego_la_mesa,CA,city,SAN DIEGO,LA MESA,La Mesa,8.5
+ca_city_san_diego_lemon_grove,CA,city,SAN DIEGO,LEMON GROVE,Lemon Grove,8.75
+ca_city_san_diego_national_city,CA,city,SAN DIEGO,NATIONAL CITY,National City,8.75
+ca_city_san_diego_oceanside,CA,city,SAN DIEGO,OCEANSIDE,Oceanside,8.25
+ca_city_san_diego_poway,CA,city,SAN DIEGO,POWAY,Poway,7.75
+ca_city_san_diego_san_diego,CA,city,SAN DIEGO,SAN DIEGO,San Diego,7.75
+ca_city_san_diego_san_marcos,CA,city,SAN DIEGO,SAN MARCOS,San Marcos,8.75
+ca_city_san_diego_santee,CA,city,SAN DIEGO,SANTEE,Santee,7.75
+ca_city_san_diego_solana_beach,CA,city,SAN DIEGO,SOLANA BEACH,Solana Beach,8.75
+ca_city_san_diego_vista,CA,city,SAN DIEGO,VISTA,Vista,8.25
+ca_county_san_francisco,CA,county,SAN FRANCISCO,,San Francisco County,8.625
+ca_city_san_francisco_san_francisco,CA,city,SAN FRANCISCO,SAN FRANCISCO,San Francisco,8.625
+ca_county_san_joaquin,CA,county,SAN JOAQUIN,,San Joaquin County,7.75
+ca_city_san_joaquin_escalon,CA,city,SAN JOAQUIN,ESCALON,Escalon,8.75
+ca_city_san_joaquin_lathrop,CA,city,SAN JOAQUIN,LATHROP,Lathrop,8.75
+ca_city_san_joaquin_lodi,CA,city,SAN JOAQUIN,LODI,Lodi,8.25
+ca_city_san_joaquin_manteca,CA,city,SAN JOAQUIN,MANTECA,Manteca,9.0
+ca_city_san_joaquin_mountain_house,CA,city,SAN JOAQUIN,MOUNTAIN HOUSE,Mountain House,7.75
+ca_city_san_joaquin_ripon,CA,city,SAN JOAQUIN,RIPON,Ripon,7.75
+ca_city_san_joaquin_stockton,CA,city,SAN JOAQUIN,STOCKTON,Stockton,9.0
+ca_city_san_joaquin_tracy,CA,city,SAN JOAQUIN,TRACY,Tracy,8.25
+ca_county_san_luis_obispo,CA,county,SAN LUIS OBISPO,,San Luis Obispo County,7.25
+ca_city_san_luis_obispo_arroyo_grande,CA,city,SAN LUIS OBISPO,ARROYO GRANDE,Arroyo Grande,8.75
+ca_city_san_luis_obispo_atascadero,CA,city,SAN LUIS OBISPO,ATASCADERO,Atascadero,8.75
+ca_city_san_luis_obispo_grover_beach,CA,city,SAN LUIS OBISPO,GROVER BEACH,Grover Beach,8.75
+ca_city_san_luis_obispo_morro_bay,CA,city,SAN LUIS OBISPO,MORRO BAY,Morro Bay,8.75
+ca_city_san_luis_obispo_paso_robles,CA,city,SAN LUIS OBISPO,PASO ROBLES,Paso Robles,8.75
+ca_city_san_luis_obispo_pismo_beach,CA,city,SAN LUIS OBISPO,PISMO BEACH,Pismo Beach,8.25
+ca_city_san_luis_obispo_san_luis_obispo,CA,city,SAN LUIS OBISPO,SAN LUIS OBISPO,San Luis Obispo,8.75
+ca_county_san_mateo,CA,county,SAN MATEO,,San Mateo County,9.375
+ca_city_san_mateo_atherton,CA,city,SAN MATEO,ATHERTON,Atherton,9.375
+ca_city_san_mateo_belmont,CA,city,SAN MATEO,BELMONT,Belmont,9.875
+ca_city_san_mateo_brisbane,CA,city,SAN MATEO,BRISBANE,Brisbane,9.875
+ca_city_san_mateo_burlingame,CA,city,SAN MATEO,BURLINGAME,Burlingame,9.625
+ca_city_san_mateo_colma,CA,city,SAN MATEO,COLMA,Colma,9.875
+ca_city_san_mateo_daly_city,CA,city,SAN MATEO,DALY CITY,Daly City,9.875
+ca_city_san_mateo_east_palo_alto,CA,city,SAN MATEO,EAST PALO ALTO,East Palo Alto,9.875
+ca_city_san_mateo_foster_city,CA,city,SAN MATEO,FOSTER CITY,Foster City,9.375
+ca_city_san_mateo_half_moon_bay,CA,city,SAN MATEO,HALF MOON BAY,Half Moon Bay,9.875
+ca_city_san_mateo_hillsborough,CA,city,SAN MATEO,HILLSBOROUGH,Hillsborough,9.375
+ca_city_san_mateo_menlo_park,CA,city,SAN MATEO,MENLO PARK,Menlo Park,9.375
+ca_city_san_mateo_millbrae,CA,city,SAN MATEO,MILLBRAE,Millbrae,9.375
+ca_city_san_mateo_pacifica,CA,city,SAN MATEO,PACIFICA,Pacifica,9.875
+ca_city_san_mateo_portola_valley,CA,city,SAN MATEO,PORTOLA VALLEY,Portola Valley,9.375
+ca_city_san_mateo_redwood_city,CA,city,SAN MATEO,REDWOOD CITY,Redwood City,9.875
+ca_city_san_mateo_san_bruno,CA,city,SAN MATEO,SAN BRUNO,San Bruno,9.875
+ca_city_san_mateo_san_carlos,CA,city,SAN MATEO,SAN CARLOS,San Carlos,9.375
+ca_city_san_mateo_san_mateo,CA,city,SAN MATEO,SAN MATEO,San Mateo,9.625
+ca_city_san_mateo_south_san_francisco,CA,city,SAN MATEO,SOUTH SAN FRANCISCO,South San Francisco,9.875
+ca_city_san_mateo_woodside,CA,city,SAN MATEO,WOODSIDE,Woodside,9.375
+ca_county_santa_barbara,CA,county,SANTA BARBARA,,Santa Barbara County,7.75
+ca_city_santa_barbara_buellton,CA,city,SANTA BARBARA,BUELLTON,Buellton,7.75
+ca_city_santa_barbara_carpinteria,CA,city,SANTA BARBARA,CARPINTERIA,Carpinteria,9.0
+ca_city_santa_barbara_goleta,CA,city,SANTA BARBARA,GOLETA,Goleta,8.75
+ca_city_santa_barbara_guadalupe,CA,city,SANTA BARBARA,GUADALUPE,Guadalupe,8.75
+ca_city_santa_barbara_lompoc,CA,city,SANTA BARBARA,LOMPOC,Lompoc,8.75
+ca_city_santa_barbara_santa_barbara,CA,city,SANTA BARBARA,SANTA BARBARA,Santa Barbara,9.25
+ca_city_santa_barbara_santa_maria,CA,city,SANTA BARBARA,SANTA MARIA,Santa Maria,8.75
+ca_city_santa_barbara_solvang,CA,city,SANTA BARBARA,SOLVANG,Solvang,8.75
+ca_county_santa_clara,CA,county,SANTA CLARA,,Santa Clara County,9.75
+ca_city_santa_clara_campbell,CA,city,SANTA CLARA,CAMPBELL,Campbell,10.5
+ca_city_santa_clara_cupertino,CA,city,SANTA CLARA,CUPERTINO,Cupertino,9.75
+ca_city_santa_clara_gilroy,CA,city,SANTA CLARA,GILROY,Gilroy,9.75
+ca_city_santa_clara_los_altos,CA,city,SANTA CLARA,LOS ALTOS,Los Altos,9.75
+ca_city_santa_clara_los_altos_hills,CA,city,SANTA CLARA,LOS ALTOS HILLS,Los Altos Hills,9.75
+ca_city_santa_clara_los_gatos,CA,city,SANTA CLARA,LOS GATOS,Los Gatos,9.875
+ca_city_santa_clara_milpitas,CA,city,SANTA CLARA,MILPITAS,Milpitas,10.0
+ca_city_santa_clara_monte_sereno,CA,city,SANTA CLARA,MONTE SERENO,Monte Sereno,9.75
+ca_city_santa_clara_morgan_hill,CA,city,SANTA CLARA,MORGAN HILL,Morgan Hill,9.75
+ca_city_santa_clara_mountain_view,CA,city,SANTA CLARA,MOUNTAIN VIEW,Mountain View,9.75
+ca_city_santa_clara_palo_alto,CA,city,SANTA CLARA,PALO ALTO,Palo Alto,9.75
+ca_city_santa_clara_san_jose,CA,city,SANTA CLARA,SAN JOSE,San Jose,10.0
+ca_city_santa_clara_santa_clara,CA,city,SANTA CLARA,SANTA CLARA,Santa Clara,9.75
+ca_city_santa_clara_saratoga,CA,city,SANTA CLARA,SARATOGA,Saratoga,9.75
+ca_city_santa_clara_sunnyvale,CA,city,SANTA CLARA,SUNNYVALE,Sunnyvale,9.75
+ca_county_santa_cruz,CA,county,SANTA CRUZ,,Santa Cruz County Unincorporated Area,9.5
+ca_city_santa_cruz_capitola,CA,city,SANTA CRUZ,CAPITOLA,Capitola,9.25
+ca_city_santa_cruz_santa_cruz,CA,city,SANTA CRUZ,SANTA CRUZ,Santa Cruz,9.75
+ca_city_santa_cruz_scotts_valley,CA,city,SANTA CRUZ,SCOTTS VALLEY,Scotts Valley,9.75
+ca_city_santa_cruz_watsonville,CA,city,SANTA CRUZ,WATSONVILLE,Watsonville,9.75
+ca_county_shasta,CA,county,SHASTA,,Shasta County,7.25
+ca_city_shasta_anderson,CA,city,SHASTA,ANDERSON,Anderson,7.75
+ca_city_shasta_redding,CA,city,SHASTA,REDDING,Redding,7.25
+ca_city_shasta_shasta_lake,CA,city,SHASTA,SHASTA LAKE,Shasta Lake,7.25
+ca_county_sierra,CA,county,SIERRA,,Sierra County,7.25
+ca_city_sierra_loyalton,CA,city,SIERRA,LOYALTON,Loyalton,7.25
+ca_county_siskiyou,CA,county,SISKIYOU,,Siskiyou County,7.25
+ca_city_siskiyou_dorris,CA,city,SISKIYOU,DORRIS,Dorris,7.25
+ca_city_siskiyou_dunsmuir,CA,city,SISKIYOU,DUNSMUIR,Dunsmuir,8.25
+ca_city_siskiyou_etna,CA,city,SISKIYOU,ETNA,Etna,7.25
+ca_city_siskiyou_fort_jones,CA,city,SISKIYOU,FORT JONES,Fort Jones,7.25
+ca_city_siskiyou_montague,CA,city,SISKIYOU,MONTAGUE,Montague,7.25
+ca_city_siskiyou_mount_shasta,CA,city,SISKIYOU,MOUNT SHASTA,Mount Shasta,7.5
+ca_city_siskiyou_tulelake,CA,city,SISKIYOU,TULELAKE,Tulelake,7.25
+ca_city_siskiyou_weed,CA,city,SISKIYOU,WEED,Weed,7.5
+ca_city_siskiyou_yreka,CA,city,SISKIYOU,YREKA,Yreka,8.75
+ca_county_solano,CA,county,SOLANO,,Solano County,7.375
+ca_city_solano_benicia,CA,city,SOLANO,BENICIA,Benicia,9.625
+ca_city_solano_dixon,CA,city,SOLANO,DIXON,Dixon,8.375
+ca_city_solano_fairfield,CA,city,SOLANO,FAIRFIELD,Fairfield,8.375
+ca_city_solano_rio_vista,CA,city,SOLANO,RIO VISTA,Rio Vista,9.125
+ca_city_solano_suisun_city,CA,city,SOLANO,SUISUN CITY,Suisun City,9.125
+ca_city_solano_vacaville,CA,city,SOLANO,VACAVILLE,Vacaville,8.125
+ca_city_solano_vallejo,CA,city,SOLANO,VALLEJO,Vallejo,9.25
+ca_county_sonoma,CA,county,SONOMA,,Sonoma County,9.25
+ca_city_sonoma_cloverdale,CA,city,SONOMA,CLOVERDALE,Cloverdale,10.0
+ca_city_sonoma_cotati,CA,city,SONOMA,COTATI,Cotati,10.25
+ca_city_sonoma_healdsburg,CA,city,SONOMA,HEALDSBURG,Healdsburg,9.75
+ca_city_sonoma_petaluma,CA,city,SONOMA,PETALUMA,Petaluma,10.25
+ca_city_sonoma_rohnert_park,CA,city,SONOMA,ROHNERT PARK,Rohnert Park,9.75
+ca_city_sonoma_santa_rosa,CA,city,SONOMA,SANTA ROSA,Santa Rosa,10.0
+ca_city_sonoma_sebastopol,CA,city,SONOMA,SEBASTOPOL,Sebastopol,10.5
+ca_city_sonoma_sonoma,CA,city,SONOMA,SONOMA,Sonoma,10.25
+ca_city_sonoma_windsor,CA,city,SONOMA,WINDSOR,Windsor,9.25
+ca_county_stanislaus,CA,county,STANISLAUS,,Stanislaus County,7.875
+ca_city_stanislaus_ceres,CA,city,STANISLAUS,CERES,Ceres,8.375
+ca_city_stanislaus_hughson,CA,city,STANISLAUS,HUGHSON,Hughson,7.875
+ca_city_stanislaus_modesto,CA,city,STANISLAUS,MODESTO,Modesto,8.875
+ca_city_stanislaus_newman,CA,city,STANISLAUS,NEWMAN,Newman,7.875
+ca_city_stanislaus_oakdale,CA,city,STANISLAUS,OAKDALE,Oakdale,8.375
+ca_city_stanislaus_patterson,CA,city,STANISLAUS,PATTERSON,Patterson,7.875
+ca_city_stanislaus_riverbank,CA,city,STANISLAUS,RIVERBANK,Riverbank,7.875
+ca_city_stanislaus_turlock,CA,city,STANISLAUS,TURLOCK,Turlock,8.625
+ca_city_stanislaus_waterford,CA,city,STANISLAUS,WATERFORD,Waterford,7.875
+ca_county_sutter,CA,county,SUTTER,,Sutter County,7.25
+ca_city_sutter_live_oak,CA,city,SUTTER,LIVE OAK,Live Oak,7.25
+ca_city_sutter_yuba_city,CA,city,SUTTER,YUBA CITY,Yuba City,7.25
+ca_county_tehama,CA,county,TEHAMA,,Tehama County,7.25
+ca_city_tehama_corning,CA,city,TEHAMA,CORNING,Corning,7.75
+ca_city_tehama_red_bluff,CA,city,TEHAMA,RED BLUFF,Red Bluff,7.5
+ca_city_tehama_tehama,CA,city,TEHAMA,TEHAMA,Tehama,7.25
+ca_county_trinity,CA,county,TRINITY,,Trinity County,7.25
+ca_county_tulare,CA,county,TULARE,,Tulare County,7.75
+ca_city_tulare_dinuba,CA,city,TULARE,DINUBA,Dinuba,8.5
+ca_city_tulare_exeter,CA,city,TULARE,EXETER,Exeter,8.75
+ca_city_tulare_farmersville,CA,city,TULARE,FARMERSVILLE,Farmersville,8.75
+ca_city_tulare_lindsay,CA,city,TULARE,LINDSAY,Lindsay,8.75
+ca_city_tulare_porterville,CA,city,TULARE,PORTERVILLE,Porterville,9.25
+ca_city_tulare_tulare,CA,city,TULARE,TULARE,Tulare,8.25
+ca_city_tulare_visalia,CA,city,TULARE,VISALIA,Visalia,8.5
+ca_city_tulare_woodlake,CA,city,TULARE,WOODLAKE,Woodlake,8.75
+ca_county_tuolumne,CA,county,TUOLUMNE,,Tuolumne County,7.25
+ca_city_tuolumne_sonora,CA,city,TUOLUMNE,SONORA,Sonora,8.75
+ca_county_ventura,CA,county,VENTURA,,Ventura County,7.25
+ca_city_ventura_camarillo,CA,city,VENTURA,CAMARILLO,Camarillo,7.25
+ca_city_ventura_fillmore,CA,city,VENTURA,FILLMORE,Fillmore,7.25
+ca_city_ventura_moorpark,CA,city,VENTURA,MOORPARK,Moorpark,7.25
+ca_city_ventura_ojai,CA,city,VENTURA,OJAI,Ojai,7.25
+ca_city_ventura_oxnard,CA,city,VENTURA,OXNARD,Oxnard,9.25
+ca_city_ventura_port_hueneme,CA,city,VENTURA,PORT HUENEME,Port Hueneme,8.75
+ca_city_ventura_santa_paula,CA,city,VENTURA,SANTA PAULA,Santa Paula,9.25
+ca_city_ventura_simi_valley,CA,city,VENTURA,SIMI VALLEY,Simi Valley,7.25
+ca_city_ventura_thousand_oaks,CA,city,VENTURA,THOUSAND OAKS,Thousand Oaks,7.25
+ca_city_ventura_ventura,CA,city,VENTURA,VENTURA,Ventura,7.75
+ca_county_yolo,CA,county,YOLO,,Yolo County,7.25
+ca_city_yolo_davis,CA,city,YOLO,DAVIS,Davis,9.25
+ca_city_yolo_west_sacramento,CA,city,YOLO,WEST SACRAMENTO,West Sacramento,9.25
+ca_city_yolo_winters,CA,city,YOLO,WINTERS,Winters,8.25
+ca_city_yolo_woodland,CA,city,YOLO,WOODLAND,Woodland,8.0
+ca_county_yuba,CA,county,YUBA,,Yuba County Unincorporated Area,8.25
+ca_city_yuba_marysville,CA,city,YUBA,MARYSVILLE,Marysville,8.25
+ca_city_yuba_wheatland,CA,city,YUBA,WHEATLAND,Wheatland,7.75

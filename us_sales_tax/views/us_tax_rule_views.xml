@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_us_tax_rule_tree" model="ir.ui.view">
+        <field name="name">us.tax.rule.tree</field>
+        <field name="model">us.tax.rule</field>
+        <field name="arch" type="xml">
+            <list string="Tax Rules" editable="bottom">
+                <field name="category_id"/>
+                <field name="state_code"/>
+                <field name="taxable"/>
+                <field name="note"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_us_tax_rule_search" model="ir.ui.view">
+        <field name="name">us.tax.rule.search</field>
+        <field name="model">us.tax.rule</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="category_id"/>
+                <field name="state_code"/>
+                <filter name="exempt" string="Exempt" domain="[('taxable','=',False)]"/>
+                <filter name="taxable" string="Taxable" domain="[('taxable','=',True)]"/>
+                <group>
+                    <filter name="g_state" string="State" context="{'group_by':'state_code'}"/>
+                    <filter name="g_cat" string="Category" context="{'group_by':'category_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_us_tax_rule" model="ir.actions.act_window">
+        <field name="name">Tax Rules (Exemption Matrix)</field>
+        <field name="res_model">us.tax.rule</field>
+        <field name="view_mode">list</field>
+        <field name="search_view_id" ref="view_us_tax_rule_search"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Resale/reseller exemption fields on the customer form (Sales & Purchase tab). -->
+    <record id="view_partner_form_us_tax_exemption" model="ir.ui.view">
+        <field name="name">res.partner.form.us.tax.exemption</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- Anchor on //notebook (always present in base.view_partner_form) so we don't depend
+                 on a page another module adds. -->
+            <xpath expr="//notebook" position="inside">
+                <page string="US Sales Tax" name="us_tax_exemption_page">
+                    <group string="Resale / Reseller Exemption">
+                        <field name="is_tax_exempt"/>
+                        <field name="resale_certificate_number" invisible="not is_tax_exempt"/>
+                        <field name="us_tax_exemption_state_ids" widget="many2many_tags"
+                               invisible="not is_tax_exempt" options="{'no_create': True}"/>
+                        <field name="entity_use_code" invisible="not is_tax_exempt"/>
+                        <field name="us_tax_exemption_expiry" invisible="not is_tax_exempt"/>
+                        <field name="us_tax_exemption_doc" filename="us_tax_exemption_doc_name"
+                               invisible="not is_tax_exempt"/>
+                        <field name="us_tax_exemption_doc_name" invisible="1"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

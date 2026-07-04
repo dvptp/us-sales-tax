@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_us_tax_category_user,us.tax.category.user,model_us_tax_category,base.group_user,1,0,0,0
+access_us_tax_category_manager,us.tax.category.manager,model_us_tax_category,account.group_account_manager,1,1,1,1
+access_us_tax_rule_user,us.tax.rule.user,model_us_tax_rule,base.group_user,1,0,0,0
+access_us_tax_rule_manager,us.tax.rule.manager,model_us_tax_rule,account.group_account_manager,1,1,1,1
+access_us_tax_rate_user,us.tax.rate.user,model_us_tax_rate,base.group_user,1,0,0,0
+access_us_tax_rate_manager,us.tax.rate.manager,model_us_tax_rate,account.group_account_manager,1,1,1,1
+access_us_tax_txn_log_user,us.tax.transaction.log.user,model_us_tax_transaction_log,account.group_account_invoice,1,0,0,0
+access_us_tax_txn_log_manager,us.tax.transaction.log.manager,model_us_tax_transaction_log,account.group_account_manager,1,1,1,1
