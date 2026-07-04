@@ -145,32 +145,6 @@ class UsTaxEngine(models.AbstractModel):
         _logger.warning("PBM hosted '%s' error (HTTP %s) -- using local data.", tool, resp.status_code)
         return None
 
-    @api.model
-    def _compute_full_cart_hosted(self, company, ship_state, lines_data):
-        """Full cart lookup using /v1/tax (preferred for accuracy with mixed categories like digital goods).
-        lines_data: list of dicts { 'category': code_or_None, 'amount': , 'qty': }
-        Returns list of per-line results (rate, tax, taxable, jurisdiction, exemption_reason).
-        """
-        if not company.us_tax_api_url:
-            raise UserError(_("US Sales Tax: hosted provider selected but no API URL configured."))
-        # Key presence already enforced by public entry points.
-        import requests
-        payload = {
-            "destination": {"state": ship_state},
-            "lines": lines_data,
-        }
-        resp = requests.post(
-            company.us_tax_api_url.rstrip("/") + "/v1/tax",
-            data=json.dumps(payload),
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": "Bearer %s" % (company.us_tax_api_key or ""),
-            },
-            timeout=HOSTED_TIMEOUT,
-        )
-        resp.raise_for_status()
-        return resp.json().get("lines", [])
-
     # Our category code -> TaxCloud TIC (Taxability Information Code). Approximate;
     # the whole point of the comparison is to discover where these should differ
     # per state and refine our own taxability DB accordingly.
@@ -265,6 +239,10 @@ class UsTaxEngine(models.AbstractModel):
         """
         if not rate:
             return self.env["account.tax"]
+        # Round to 4dp before search AND create: a hosted engine can return a raw rate with
+        # floating-point noise (7.2500001 vs 7.25), and an exact-match search on an unrounded
+        # amount would miss the existing tax and spawn a near-duplicate account.tax per order.
+        rate = round(rate, 4)
         Tax = self.env["account.tax"].sudo()
         tax = Tax.search([
             ("company_id", "=", company.id),
