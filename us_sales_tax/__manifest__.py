@@ -1,6 +1,6 @@
 {
     "name": "US Sales Tax",
-    "version": "19.0.1.0.0",
+    "version": "20.0.1.0.0",
     "summary": "Automatic US sales tax with product-level taxability "
                "(food/exemption-aware) and a fail-safe, coupon-aware engine.",
     "description": """
@@ -43,7 +43,7 @@ interest, or filing errors.
     "images": ["static/description/icon.png"],
     "depends": ["account", "sale"],
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "data/us_tax_category_data.xml",
         "data/us_tax_rule_ca_data.xml",
         "data/us.tax.rate.csv",

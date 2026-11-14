@@ -30,10 +30,10 @@ class UsTaxRule(models.Model):
         help="Citation / reason, e.g. 'CA Prop 163 (1992): snack foods exempt'.",
     )
 
-    _sql_constraints = [
-        ("cat_state_uniq", "unique(category_id, state_code)",
-         "There is already a rule for this category in this state."),
-    ]
+    _cat_state_uniq = models.Constraint(
+        "unique(category_id, state_code)",
+        "There is already a rule for this category in this state.",
+    )
 
     @api.model_create_multi
     def create(self, vals_list):

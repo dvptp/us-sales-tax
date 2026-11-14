@@ -29,10 +29,10 @@ class UsTaxRate(models.Model):
         help="State + county + district combined rate for this jurisdiction.")
     note = fields.Char()
 
-    _sql_constraints = [
-        ("juris_uniq", "unique(state_code, county, city)",
-         "There is already a rate for this jurisdiction."),
-    ]
+    _juris_uniq = models.Constraint(
+        "unique(state_code, county, city)",
+        "There is already a rate for this jurisdiction.",
+    )
 
     @staticmethod
     def _norm(v):

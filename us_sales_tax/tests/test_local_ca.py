@@ -1,3 +1,5 @@
+from psycopg2 import IntegrityError
+
 from odoo.exceptions import UserError, ValidationError
 from odoo.tests.common import TransactionCase, tagged
 from odoo.tools import mute_logger
@@ -28,6 +30,22 @@ class TestLocalCA(TransactionCase):
         cls.cat_clothing = cls.env.ref("us_sales_tax.cat_clothing")
         cls.ca = cls.env["res.country.state"].search(
             [("code", "=", "CA"), ("country_id.code", "=", "US")], limit=1)
+
+    # ------------------------------------------------------ constraints
+    def test_duplicates_are_refused_by_the_database(self):
+        # `_sql_constraints` is ignored with only a warning from Odoo 19 on, so each unique
+        # rule is declared as `models.Constraint`; this fails if one stops reaching the table.
+        cat = self.env["us.tax.category"].create({"name": "Zorblat Goods", "code": "ZORBLAT"})
+        rate = {"state_code": "ZZ", "county": "Zorblat", "city": "Zorblatville", "rate": 1.0,
+                "level": "city"}
+        rule = {"category_id": cat.id, "state_code": "ZZ"}
+        self.env["us.tax.rate"].create(rate)
+        self.env["us.tax.rule"].create(rule)
+        for model, vals in (("us.tax.category", {"name": "Zorblat Two", "code": "ZORBLAT"}),
+                            ("us.tax.rate", rate), ("us.tax.rule", rule)):
+            with self.subTest(model=model), self.assertRaises(IntegrityError), \
+                    mute_logger("odoo.sql_db"), self.env.cr.savepoint():
+                self.env[model].create(vals)
 
     # ------------------------------------------------------------ rates
     def test_snack_exempt_in_ca(self):
@@ -176,6 +194,26 @@ class TestLocalCA(TransactionCase):
         # general item, no city -> bundled CA state floor (7.25), not a crash
         self.assertEqual(
             self.engine.compute_rate(self.company, "CA", self.cat_general), 7.25)
+
+    def test_hosted_exec_posts_the_instance_uuid(self):
+        """The real `_pbm_exec` body, with only the network call replaced: the other hosted
+        tests patch above it, so nothing else runs the request-building lines."""
+        from unittest.mock import MagicMock, patch
+        self.company.write({
+            "us_tax_provider": "hosted",
+            "us_tax_api_key": "zorblat_key",
+            "us_tax_api_url": "https://zorblat.invalid/",
+        })
+        self.env["ir.config_parameter"].sudo().set_str("database.uuid", "zorblat-uuid-7731")
+        resp = MagicMock(status_code=200)
+        resp.json.return_value = {"result": {"rate": 9.87}}
+        with patch("requests.post", return_value=resp) as post:
+            result = self.engine._pbm_exec(self.company, "zorblat_tool", {"q": 1})
+        self.assertEqual(result, {"rate": 9.87})
+        self.assertEqual(post.call_args.args[0], "https://zorblat.invalid/v1/exec/zorblat_tool")
+        self.assertEqual(post.call_args.kwargs["json"],
+                         {"instance_uuid": "zorblat-uuid-7731", "payload": {"q": 1}})
+        self.assertEqual(post.call_args.kwargs["headers"], {"Authorization": "Bearer zorblat_key"})
 
     @mute_logger("odoo.addons.us_sales_tax.models.us_tax_engine")
     def test_hosted_with_key_calls_hosted(self):

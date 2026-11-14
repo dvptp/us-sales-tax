@@ -3,6 +3,8 @@
 `us_sales_tax` — free rooftop-accurate **California** sales-tax module for Odoo 19 CE
 (LGPL-3); the free tier that upsells hosted **Midas**. Repo `dvptp/us-sales-tax`; the
 Odoo App-Store listing registers the series branch **`19.0`** (the default here).
+Branch **`20.0`** is the Odoo 20 port (cut from `19.0`, 31 tests green on the Odoo 20 rig,
+`landl-odoo-dev/rig`); it is not on the App Store.
 
 - **Read first:** `README.md` (free-vs-hosted split, disclaimer)
 - Hub status: `../PROJECTS.md` us-sales-tax row · product context: the Midas row +

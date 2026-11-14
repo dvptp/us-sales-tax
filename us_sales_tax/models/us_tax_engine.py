@@ -121,7 +121,7 @@ class UsTaxEngine(models.AbstractModel):
         if not base or not key:
             return None  # unconfigured -> husk (falls back to bundled-local data)
         import requests  # local import: only needed on the hosted path
-        uuid = self.env["ir.config_parameter"].sudo().get_param("database.uuid") or ""
+        uuid = self.env["ir.config_parameter"].sudo().get_str("database.uuid")
         try:
             resp = requests.post(
                 "%s/v1/exec/%s" % (base, tool),

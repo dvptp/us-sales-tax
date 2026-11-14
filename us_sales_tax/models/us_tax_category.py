@@ -23,9 +23,7 @@ class UsTaxCategory(models.Model):
     active = fields.Boolean(default=True)
     rule_ids = fields.One2many("us.tax.rule", "category_id", string="Rules")
 
-    _sql_constraints = [
-        ("code_uniq", "unique(code)", "Tax category code must be unique."),
-    ]
+    _code_uniq = models.Constraint("unique(code)", "Tax category code must be unique.")
 
     @api.depends("name", "code")
     def _compute_display_name(self):
