@@ -111,7 +111,7 @@ class ResPartner(models.Model):
         buyer_ref is the OPAQUE partner id -- no retail PII.
         """
         for partner in self:
-            company = partner.company_id or self.env.company
+            company = (partner.company_id or self.env.company).sudo()  # administrators-only key
             if company.us_tax_provider != "hosted" or not company.us_tax_api_url or not company.us_tax_api_key:
                 continue
             # Sync whenever the buyer has cert states on file — exempt -> active, not -> revoked.

@@ -15,7 +15,7 @@ class ResCompany(models.Model):
     )
     us_tax_api_url = fields.Char("Hosted API URL", default="https://api.dvptp.com")
     us_tax_api_key = fields.Char(
-        "Hosted API Key",
+        "Hosted API Key", groups="base.group_system",
         help="Your PBM API key (bsn_...) for the paid hosted engine: all other states, "
              "always-current rates, and the compliance tier. The module is open source (LGPL) "
              "and the free 'local' provider always works without a key using the bundled "
@@ -51,11 +51,11 @@ class ResCompany(models.Model):
 
     # TaxCloud integration for parallel comparison (to refine our data vs TaxCloud, e.g. for digital goods)
     us_taxcloud_api_login_id = fields.Char(
-        "TaxCloud API Login ID",
+        "TaxCloud API Login ID", groups="base.group_system",
         help="For parallel computation and comparison with TaxCloud (e.g. on lotusandluna.com).",
     )
     us_taxcloud_api_key = fields.Char(
-        "TaxCloud API Key",
+        "TaxCloud API Key", groups="base.group_system",
         help="For parallel computation and comparison with TaxCloud.",
     )
     us_tax_comparison_enabled = fields.Boolean(

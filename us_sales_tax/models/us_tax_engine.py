@@ -117,7 +117,7 @@ class UsTaxEngine(models.AbstractModel):
         no customer data.
         """
         base = (company.us_tax_api_url or "").rstrip("/")
-        key = company.us_tax_api_key or ""
+        key = company.sudo().us_tax_api_key or ""  # administrators-only field
         if not base or not key:
             return None  # unconfigured -> husk (falls back to bundled-local data)
         import requests  # local import: only needed on the hosted path
@@ -166,6 +166,7 @@ class UsTaxEngine(models.AbstractModel):
         never to set the tax we apply. Returns {rate, tax_amount, taxable, raw}
         or {error}. Requires us_taxcloud_api_login_id + us_taxcloud_api_key.
         """
+        company = company.sudo()  # the TaxCloud credentials are administrators-only fields
         if not company.us_taxcloud_api_login_id or not company.us_taxcloud_api_key:
             return {"error": "TaxCloud credentials not configured"}
 
@@ -251,18 +252,33 @@ class UsTaxEngine(models.AbstractModel):
             ("amount", "=", rate),
             ("us_tax_managed", "=", True),
         ], limit=1)
-        if tax:
-            return tax
-        return Tax.create({
-            "name": "US Sales Tax %.4g%%" % rate,
-            "amount": rate,
-            "amount_type": "percent",
-            "type_tax_use": "sale",
-            "company_id": company.id,
-            "tax_group_id": self._us_tax_group(company).id,
-            "us_tax_managed": True,
-            "description": "Sales Tax",
-        })
+        if not tax:
+            tax = Tax.create({
+                "name": "US Sales Tax %.4g%%" % rate,
+                "amount": rate,
+                "amount_type": "percent",
+                "type_tax_use": "sale",
+                "company_id": company.id,
+                "tax_group_id": self._us_tax_group(company).id,
+                "us_tax_managed": True,
+                "description": "Sales Tax",
+            })
+        # A tax line with no account books to the invoice line's income account, so collected
+        # tax would read as revenue. Use the account the company's default sales tax books to.
+        # (Read the two stored halves: the combined repartition_line_ids is empty in cache right
+        # after create.)
+        unbooked = (tax.invoice_repartition_line_ids | tax.refund_repartition_line_ids).filtered(
+            lambda r: r.repartition_type == "tax" and not r.account_id)
+        if unbooked:
+            account = company.sudo().account_sale_tax_id.invoice_repartition_line_ids.filtered(
+                lambda r: r.repartition_type == "tax").account_id[:1]
+            if account:
+                unbooked.account_id = account
+            else:
+                _logger.warning(
+                    "US Sales Tax: %s has no tax account and company %s has no default sales tax "
+                    "with one -- collected tax will post to income.", tax.name, company.name)
+        return tax
 
     @api.model
     def _us_tax_group(self, company):
@@ -335,8 +351,8 @@ class UsTaxEngine(models.AbstractModel):
             _logger.exception("US Sales Tax: compute failed for %s", doc.display_name)
             if company.us_tax_fail_mode == "closed":
                 raise UserError(_(
-                    "Sales tax could not be computed for this %s. "
-                    "Please try again.") % noun)
+                    "Sales tax could not be computed for this %s (%s). "
+                    "Please try again.") % (noun, doc.display_name))
             doc.message_post(body=_(
                 "US Sales Tax: tax compute failed; applied $0 (fail-open). "
                 "Please review. Error: %s") % err)
@@ -357,7 +373,7 @@ class UsTaxEngine(models.AbstractModel):
         observe-only TaxCloud comparison (logs divergences for DB refinement;
         never changes the tax actually applied).
         """
-        company = doc.company_id or self.env.company
+        company = (doc.company_id or self.env.company).sudo()  # reads administrators-only keys
         ship_state = (ship_state or "").strip().upper()
         lines = self._taxable_lines(doc)
 
@@ -506,7 +522,7 @@ class UsTaxEngine(models.AbstractModel):
         Out-of-state $0 sales push too (no_nexus) so nexus monitoring sees them. Never blocks
         confirm: a network/API failure is recorded on the local mirror and logged, not raised.
         """
-        company = doc.company_id or self.env.company
+        company = (doc.company_id or self.env.company).sudo()  # reads administrators-only keys
         if not company.us_tax_enabled:
             return True
         jurisdictions = self.build_ledger_jurisdictions(doc)

@@ -59,20 +59,32 @@ class AccountMove(models.Model):
                 _logger.exception("US Sales Tax: ledger push failed for %s: %s", move.display_name, e)
         return True
 
-    def action_post(self):
-        # Tax LAST on direct invoices, in draft, BEFORE posting — so the posted move + its tax lines
-        # are correct. We deliberately do NOT recompute inside the post transaction (that re-entrancy
-        # is what crashed the legacy TaxCloud stack); applying on the draft is the safe seam.
+    def _post(self, soft=True):
+        # Tax LAST on direct invoices, while still draft, so the posted move + its tax lines are
+        # correct. Hooked here and not on action_post: batch validation, the confirmation wizard,
+        # auto-post and reversals all call _post directly.
+        # ponytail: one provider call per invoice, in series; a hosted outage costs a batch
+        # HOSTED_TIMEOUT per call. Add a per-transaction "provider down" flag if batches grow.
+        cancelling = self.env.context.get("move_reverse_cancel")
         for move in self:
-            if move.state == "draft" and move._us_is_direct_customer_invoice():
-                self.env["us.tax.engine"].apply_safe(move)
-        res = super().action_post()
+            if move.state != "draft" or not move._us_is_direct_customer_invoice():
+                continue
+            if "pos_order_ids" in move._fields and move.pos_order_ids:
+                continue  # taxed and paid at the till
+            origin = move.reversed_entry_id
+            if cancelling and origin:
+                # A cancelling reversal mirrors its invoice whatever the rate is today; it only
+                # needs the invoice's exemption stamp (not copied) so the ledger nets out.
+                move._us_set_exemption(origin.us_tax_exempt_reason, origin.us_tax_exempt_certificate)
+                continue
+            self.env["us.tax.engine"].apply_safe(move)
+        posted = super()._post(soft=soft)
         # Log the sale to the record-of-tax ledger after it's posted (amounts final; incl. $0 /
         # out-of-nexus / exempt, which must be reported not omitted). Idempotent via the flag.
-        for move in self:
+        for move in posted:
             if move._us_is_direct_customer_invoice():
                 move._us_push_ledger()
-        return res
+        return posted
 
     def action_recompute_us_tax(self):
         self._us_apply_taxes()
